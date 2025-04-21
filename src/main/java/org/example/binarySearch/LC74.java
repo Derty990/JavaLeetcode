@@ -34,7 +34,7 @@ public class LC74 {
                 L = mid + 1;
             } else return true;
         }
-        
+
         return false;
     }
 
