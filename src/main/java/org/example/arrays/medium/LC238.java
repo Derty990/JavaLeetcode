@@ -1,4 +1,4 @@
-package org.example.arrays;
+package org.example.arrays.medium;
 
 public class LC238 {
     public int[] productExceptSelf(int[] nums) {
