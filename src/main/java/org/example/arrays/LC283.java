@@ -7,6 +7,21 @@ public class LC283 {
         moveZeroes(new int[]{4,2,4,0,0,3,0,5,1,0});
     }
     public static void moveZeroes(int[] nums) {
+
+        int n =nums.length;
+        int nonZeroIndex = 0;
+
+        for (int i = 0; i < n; i++) {
+            if(nums[i]!=0){
+                nums[nonZeroIndex++] = nums[i];
+            }
+        }
+
+        while(nonZeroIndex<n){
+            nums[nonZeroIndex++] = 0;
+        }
+
+      /*
         int n = nums.length;
         int nonZeroIndex = 0;
         for (int i = 0; i < n; i++) {
@@ -17,7 +32,7 @@ public class LC283 {
 
         while(nonZeroIndex < n){
             nums[nonZeroIndex++] = 0;
-        }
+        }*/
 
 
         /*int n = nums.length;

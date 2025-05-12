@@ -1,4 +1,4 @@
-package org.example.arrays.medium;
+package org.example.hashTables;
 
 import java.util.HashMap;
 import java.util.Map;

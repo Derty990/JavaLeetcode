@@ -7,7 +7,26 @@ public class LC121 {
     }
 
     public static int maxProfit(int[] prices) {
-        if(prices.length<2){
+
+      if(prices.length<2){
+          return 0;
+      }
+//        prices = [7,1,5,3,6,4]
+      int minPrice = Integer.MAX_VALUE;
+      int maxProfit = 0;
+
+        for (int i = 0; i < prices.length; i++) {
+
+            if(prices[i] < minPrice){
+                minPrice = prices[i];
+            }else if (prices[i] - minPrice > maxProfit){
+                maxProfit = prices[i] - minPrice;
+            }
+        }
+
+        return maxProfit;
+
+      /*  if(prices.length<2){
             return 0;
         }
         int minPrice = Integer.MAX_VALUE;
@@ -23,7 +42,7 @@ public class LC121 {
 
         }
 
-        return maxProfit;
+        return maxProfit;*/
 
 
     }

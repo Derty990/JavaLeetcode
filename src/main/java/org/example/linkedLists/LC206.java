@@ -20,7 +20,30 @@ public class LC206 {
     }
 
     public static ListNode reverseList(ListNode head) {
-        if (head == null || head.next == null) {
+
+        if(head == null){
+            return null;
+        }
+
+        if( head.next == null){
+            return head;
+        }
+
+
+        ListNode preNode = null;
+        ListNode currNode = head;
+
+        while(currNode != null){
+            ListNode nextNode = currNode.next;
+            currNode.next = preNode;
+            preNode = currNode;
+            currNode = nextNode;
+        }
+
+        head = preNode;
+        return head;
+
+      /*  if (head == null || head.next == null) {
             return head;
         }
 
@@ -37,6 +60,6 @@ public class LC206 {
             previous = current;
             current = nextTemp;
         }
-        return previous;
+        return previous;*/
     }
 }
