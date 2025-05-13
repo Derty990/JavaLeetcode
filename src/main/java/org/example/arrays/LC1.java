@@ -83,14 +83,12 @@ public class LC1 {
 
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
-        Map<Integer, Integer> results = new HashMap<>();
 
         for (int i = 0; i < nums.length  ; i++) {
             int complement = target-nums[i];
 
             if(numMap.containsKey(complement)){
-                results.put(complement, nums[i]);
-               // return new int[]{numMap.get(complement), i};
+                return new int[]{numMap.get(complement), i};
             }
             numMap.put(nums[i], i);
         }

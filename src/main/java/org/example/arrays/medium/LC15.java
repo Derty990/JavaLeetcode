@@ -5,7 +5,7 @@ import java.util.*;
 public class LC15 {
     public List<List<Integer>> threeSum(int[] nums) {
 
-       if(nums.length<3 || nums == null){
+       if(nums == null || nums.length<3){
            return new ArrayList<>();
        }
 

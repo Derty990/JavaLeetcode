@@ -29,7 +29,6 @@ public class LC206 {
             return head;
         }
 
-
         ListNode preNode = null;
         ListNode currNode = head;
 

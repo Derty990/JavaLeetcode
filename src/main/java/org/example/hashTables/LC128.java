@@ -16,7 +16,7 @@ public class LC128 {
             int currentLength = 1;
 
             int nextNum = num+1;
-            while(exploredMap.containsKey(nextNum) && exploredMap.get(nextNum) == false){
+            while(exploredMap.containsKey(nextNum) && !exploredMap.get(nextNum)){
                 currentLength++;
                 exploredMap.put(nextNum, Boolean.TRUE);
 

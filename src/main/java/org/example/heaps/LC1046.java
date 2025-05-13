@@ -1,7 +1,5 @@
 package org.example.heaps;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class LC1046 {
